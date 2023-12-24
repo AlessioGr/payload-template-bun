@@ -1,6 +1,6 @@
 {
-  "name": "autowebsite",
-  "description": "A blank template to get started with Payload",
+  "name": "payloadbun",
+  "description": "A blank template to get started with Payload and Bun",
   "version": "1.0.0",
   "main": "dist/server.js",
   "license": "MIT",
