@@ -1,0 +1,44 @@
+{
+  "name": "autowebsite",
+  "description": "A blank template to get started with Payload",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "license": "MIT",
+  "trustedDependencies": ["sharp"],
+  "overrides": {
+    "sharp": "0.33.1"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
+    "build:server": "tsc",
+    "build": "bun run copyfiles && bun run build:payload && bun run build:server",
+    "serve": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NODE_ENV=production node dist/server.js",
+    "copyfiles": "copyfiles -u 1 \"src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" dist/",
+    "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
+    "generate:graphQLSchema": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema",
+    "payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload",
+    "clean:unix": "find . \\( -type d \\( -name node_modules -o -name dist -o -name .cache \\) -o -type f -name tsconfig.tsbuildinfo \\) -exec rm -rf {} +"
+  },
+  "dependencies": {
+    "@payloadcms/bundler-webpack": "^1.0.0",
+    "@payloadcms/db-mongodb": "file:payloadcms-db-mongodb-1.1.1.tgz",
+    "@payloadcms/plugin-cloud": "^2.0.0",
+    "@payloadcms/richtext-lexical": "0.5.0",
+    "bullmq": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "payload": "2.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "copyfiles": "^2.4.1",
+    "nodemon": "^3.0.1",
+    "typescript": "5.3.3",
+    "@payloadcms/eslint-config": "1.0.0",
+    "prettier": "^3.0.3"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  }
+}
