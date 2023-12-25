@@ -36,7 +36,8 @@
     "nodemon": "^3.0.1",
     "typescript": "5.3.3",
     "@payloadcms/eslint-config": "1.0.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "@types/bun": "latest"
   },
   "resolutions": {
     "jackspeak": "2.1.1"
