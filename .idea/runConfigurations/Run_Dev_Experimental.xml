@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Dev Experimental" type="NodeJSConfigurationType" path-to-node="/opt/homebrew/opt/bun@1.0.11/bin/bun" path-to-js-file="src/index.ts" working-dir="$PROJECT_DIR$">
+    <method v="2" />
+  </configuration>
+</component>
