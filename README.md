@@ -1,6 +1,16 @@
 # Payload Blank Template
 
-A blank template for [Payload](https://github.com/payloadcms/payload) and [Bun](https://bun.sh/) - a faster alternative to Node.JS - to help you get up and running quickly. 
+A blank template for [Payload](https://github.com/payloadcms/payload) and [Bun](https://bun.sh/) - a faster alternative to Node.JS - to help you get up and running quickly.
+
+## Features of this template
+
+- Full compatibility with Bun
+- Fully-working Dockerfile which uses Bun to install, build and serve your project
+- Fully-configured, opinionated eslint and prettier configurations which are used inside of payload core and in my own projects
+- Optimal IntelliJ & VS Code run configs
+- Optimal tsconfig settings
+- New lexical-based richtext editor (Beta) enabled by default
+- Everything else is identical to the payload "blank" template, so you have a clean project to get started with
 
 ## Development
 
