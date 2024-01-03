@@ -1,6 +1,6 @@
 # Payload Blank Template
 
-A blank template for [Payload](https://github.com/payloadcms/payload) and Bun to help you get up and running quickly. 
+A blank template for [Payload](https://github.com/payloadcms/payload) and [Bun](https://bun.sh/) - a faster alternative to Node.JS - to help you get up and running quickly. 
 
 ## Development
 
