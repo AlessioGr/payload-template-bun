@@ -18,7 +18,9 @@
     "generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
     "generate:graphQLSchema": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema",
     "payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload",
-    "clean:unix": "find . \\( -type d \\( -name node_modules -o -name dist -o -name .cache \\) -o -type f -name tsconfig.tsbuildinfo \\) -exec rm -rf {} +"
+    "clean:unix": "find . \\( -type d \\( -name node_modules -o -name dist -o -name .cache  -o -name build \\) -o -type f -name tsconfig.tsbuildinfo \\) -exec rm -rf {} +",
+    "cleanbuild:unix": "find . \\( -type d \\( -name dist -o -name .cache -o -name build \\) -o -type f -name tsconfig.tsbuildinfo \\) -exec rm -rf {} +",
+    "checkUpdates": "bunx npm-check-updates --format group -i"
   },
   "dependencies": {
     "@payloadcms/bundler-webpack": "^1.0.0",
