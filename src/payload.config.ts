@@ -5,7 +5,7 @@ import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload/config'
 
-import Users from './collections/Users'
+import { Users } from './collections/users'
 
 export default buildConfig({
   admin: {

@@ -15,7 +15,7 @@ const start = async () => {
   await payload.init({
     config: Promise.resolve(config),
     express: app,
-    onInit: async () => {
+    onInit: (payload) => {
       payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`)
     },
     secret: process.env.PAYLOAD_SECRET,
@@ -26,4 +26,4 @@ const start = async () => {
   app.listen(process.env.PORT)
 }
 
-start()
+void start()
