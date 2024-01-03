@@ -2,6 +2,11 @@
 
 A blank template for [Payload](https://github.com/payloadcms/payload) and [Bun](https://bun.sh/) - a faster alternative to Node.JS - to help you get up and running quickly.
 
+Click on "Use this template" to get started by initializing a new repository from this template:
+
+![Screenshot 2024-01-03 at 21 20 46](https://github.com/AlessioGr/payload-template-bun/assets/70709113/ea0f5afc-a87e-4bac-be0e-54f09a4c7b1a)
+
+
 ## Features of this template
 
 - Full compatibility with Bun
